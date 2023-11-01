@@ -11,6 +11,12 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(bz, s);
     })();</script>
+    <script>
+      document.getElementById("show-modal").addEventListener("click", () => {
+        window.parent.postMessage({ clientId: "N9VwsDSeKpvmntkJ0VBkCB2Oc6WqNAYO", type: "appExtOpenModal", payload: { url: "https://panicstudio.tv/en", size: "md" } }, "*");
+      });
+    </script>
+    <button id="show-modal">OPEN MODAL</button>
     <!-- Bizzabo Web Agenda End -->
   </body>
 </html>
