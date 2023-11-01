@@ -15,7 +15,6 @@
       function showModal(size) {
         window.parent.postMessage({ clientId: "N9VwsDSeKpvmntkJ0VBkCB2Oc6WqNAYO", type: "appExtOpenModal", payload: { url: "https://panicstudio.tv/en", size: size } }, "*");
       }
-      document.getElementById("show-modal").addEventListener("click", () => showModal(""));
       document.querySelectorAll(".show-modal").forEach(modal => {
         showModal(modal.getAttribute("size"));
       });
