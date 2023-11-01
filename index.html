@@ -16,7 +16,7 @@
         window.parent.postMessage({ clientId: "N9VwsDSeKpvmntkJ0VBkCB2Oc6WqNAYO", type: "appExtOpenModal", payload: { url: "https://panicstudio.tv/en", size: size } }, "*");
       }
       document.querySelectorAll(".show-modal").forEach(modal => {
-        showModal(modal.getAttribute("size"));
+        modal.addEventListener("click", () => showModal(modal.getAttribute("size")));
       });
     </script>
     <button class="show-modal" size="sm">Open modal: small</button>
